@@ -4,6 +4,7 @@ var str = "_"
 var epistaxisPrimary = document.getElementsByName("fld10050_139228_142853");
 var epistaxisHowMany = document.getElementsByName("fld10050_139234_142859");
 var epistaxisHowLong = document.getElementsByName("fld10050_139227_142852");
+var epistaxisSeekMedAttn = document.getElementsByName("fld10050_139233_142858");
 var epistaxisTreatedHow = document.getElementsByName("fld10050_139238_142863");
 var noseBleedTotalScore = document.getElementsByName("fld10050_139237_142862");
 
@@ -207,6 +208,7 @@ if (epistaxisPrimary[0].checked) {
 		}
 	}
 
+	if (epistaxisSeekMedAttn[0].checked) {}
 	for (var i=0; i<epistaxisTreatedHow.length; i++) {
 		// And stick the checked ones onto an array...
 		if (epistaxisTreatedHow[i].checked) {
@@ -216,6 +218,7 @@ if (epistaxisPrimary[0].checked) {
 				noseBleedScore = Number(answerValue[1]);
 		}
 	}
+}
 } 
 // Nose Bleed (Epistaxis) score
 noseBleedTotalScore[0].value = noseBleedScore;
