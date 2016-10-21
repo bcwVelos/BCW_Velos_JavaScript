@@ -186,13 +186,6 @@ $j('.[class^="calculateBtn"]').click(function(event) {
 ***/
 var noseBleedScore = 0;
 
-alert("epistaxisPrimary=" + epistaxisPrimary);
-alert("epistaxisHowMany=" + epistaxisHowMany);
-alert("epistaxisHowLong=" + epistaxisHowLong);
-alert("epistaxisSeekMedAttn=" + epistaxisSeekMedAttn);
-alert("epistaxisTreatedHow=" + epistaxisTreatedHow);
-alert("noseBleedTotalScore=" + noseBleedTotalScore);
-
 if (epistaxisPrimary[0].checked) {
 	for (var i=0; i<epistaxisHowMany.length; i++) {
 		// And stick the checked ones onto an array...
@@ -216,7 +209,8 @@ if (epistaxisPrimary[0].checked) {
 	}
 
 	//Add check ... only evaluate treatments if the answer to seeking medical attention is Yes.
-	if (epistaxisSeekMedAttn[0].checked) {
+	
+	alert("Can I add an alert?!");
 		for (var i=0; i<epistaxisTreatedHow.length; i++) {
 			// And stick the checked ones onto an array...
 			if (epistaxisTreatedHow[i].checked) {
@@ -226,7 +220,6 @@ if (epistaxisPrimary[0].checked) {
 					noseBleedScore = Number(answerValue[1]);
 			}
 		}
-	}
 } 
 // Nose Bleed (Epistaxis) score
 noseBleedTotalScore[0].value = noseBleedScore;
