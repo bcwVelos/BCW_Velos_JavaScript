@@ -186,12 +186,12 @@ $j('.[class^="calculateBtn"]').click(function(event) {
 ***/
 var noseBleedScore = 0;
 
-alert('epistaxisPrimary=' + epistaxisPrimary);
-alert('epistaxisHowMany=' + epistaxisHowMany);
-alert('epistaxisHowLong=' + epistaxisHowLong);
-alert('epistaxisSeekMedAttn=' + epistaxisSeekMedAttn);
-alert('epistaxisTreatedHow=' + epistaxisTreatedHow);
-alert('noseBleedTotalScore=' + noseBleedTotalScore);
+alert("epistaxisPrimary=" + epistaxisPrimary);
+alert("epistaxisHowMany=" + epistaxisHowMany);
+alert("epistaxisHowLong=" + epistaxisHowLong);
+alert("epistaxisSeekMedAttn=" + epistaxisSeekMedAttn);
+alert("epistaxisTreatedHow=" + epistaxisTreatedHow);
+alert("noseBleedTotalScore=" + noseBleedTotalScore);
 
 if (epistaxisPrimary[0].checked) {
 	for (var i=0; i<epistaxisHowMany.length; i++) {
