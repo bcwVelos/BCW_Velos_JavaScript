@@ -215,17 +215,19 @@ if (epistaxisPrimary[0].checked) {
 		}
 	}
 
-
-	for (var i=0; i<epistaxisTreatedHow.length; i++) {
-		// And stick the checked ones onto an array...
-		if (epistaxisTreatedHow[i].checked) {
-			var answer = epistaxisTreatedHow[i].value;
-			var answerValue = answer.split("|");
-			if (Number(answerValue[1]) > noseBleedScore)
-				noseBleedScore = Number(answerValue[1]);
+	//Add check ... only evaluate treatments if the answer to seeking medical attention is Yes.
+	if (epistaxisSeekMedAttn[0].checked) {
+		for (var i=0; i<epistaxisTreatedHow.length; i++) {
+			// And stick the checked ones onto an array...
+			if (epistaxisTreatedHow[i].checked) {
+				var answer = epistaxisTreatedHow[i].value;
+				var answerValue = answer.split("|");
+				if (Number(answerValue[1]) > noseBleedScore)
+					noseBleedScore = Number(answerValue[1]);
+			}
 		}
 	}
-}
+} 
 // Nose Bleed (Epistaxis) score
 noseBleedTotalScore[0].value = noseBleedScore;
 
