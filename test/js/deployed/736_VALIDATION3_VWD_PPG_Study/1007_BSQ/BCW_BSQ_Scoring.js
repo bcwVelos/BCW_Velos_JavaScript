@@ -179,10 +179,19 @@ $j(document).ready(function() {
 
 $j('.[class^="calculateBtn"]').click(function(event) {
 
+
+	
 /***
 //SECTION 1:  Nose Bleeds (Epistaxis)
 ***/
 var noseBleedScore = 0;
+
+alert('epistaxisPrimary=' + epistaxisPrimary);
+alert('epistaxisHowMany=' + epistaxisHowMany);
+alert('epistaxisHowLong=' + epistaxisHowLong);
+alert('epistaxisSeekMedAttn=' + epistaxisSeekMedAttn);
+alert('epistaxisTreatedHow=' + epistaxisTreatedHow);
+alert('noseBleedTotalScore=' + noseBleedTotalScore);
 
 if (epistaxisPrimary[0].checked) {
 	for (var i=0; i<epistaxisHowMany.length; i++) {
