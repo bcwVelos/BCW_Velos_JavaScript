@@ -210,7 +210,7 @@ if (epistaxisPrimary[0].checked) {
 
 	//Add check ... only evaluate treatments if the answer to seeking medical attention is Yes.
 	
-	alert("Can I add an alert?!");
+
 		for (var i=0; i<epistaxisTreatedHow.length; i++) {
 			// And stick the checked ones onto an array...
 			if (epistaxisTreatedHow[i].checked) {
